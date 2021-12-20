@@ -46,6 +46,7 @@ public class JulianDateTest {
         Double julianDate = JulianDate.makeJulianDateUsingMyModified(c);
 
         assertThat(julianDate, closeTo(2451604.5, 0.5));
+        //test florent
     }
 
     /**
