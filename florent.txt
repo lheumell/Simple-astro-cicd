@@ -1,0 +1,4 @@
+RUN apt-get update -y
+RUN apt-get install -y maven
+
+run mvn package
