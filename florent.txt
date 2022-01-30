@@ -2,3 +2,7 @@ RUN apt-get update -y
 RUN apt-get install -y maven
 
 run mvn package
+
+
+
+RUN mvn -f /home/app/pom.xml clean package
