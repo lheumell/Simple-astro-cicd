@@ -1,6 +1,5 @@
-FROM maven:3.8-openjdk-17 AS build
-
-COPY src /home/app/src
-COPY pom.xml /home/app
-
-RUN mvn package -x
+FROM maven:3.8-openjdk-17
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ONBUILD ADD . /usr/src/app
+ONBUILD RUN mvn install
