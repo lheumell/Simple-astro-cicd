@@ -16,3 +16,6 @@ COPY src /home/app/src
 COPY pom.xml /home/app
 
 RUN mvn package -x
+
+
+ONBUILD RUN mvn install
